@@ -1,0 +1,27 @@
+{
+    "name": "4geo35/editable-numbers-block",
+    "description": "Ad numbers block",
+    "minimum-stability": "div",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir",
+            "email": "aweram-team@yandex.ru"
+        }
+    ],
+    "require": {
+        "4geo35/editable-blocks": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "GIS\\EditableNumbersBlock\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GIS\\EditableNumbersBlock\\EditableNumbersBlockServiceProvider"
+            ]
+        }
+    }
+}
