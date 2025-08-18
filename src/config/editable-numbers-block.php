@@ -2,7 +2,7 @@
 
 return [
     "availableTypes" => [
-        "imageText" => [
+        "numbers" => [
             "title" => "Цифры",
             "admin" => "enb-numbers",
             "render" => "enb::types.numbers",
