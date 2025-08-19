@@ -8,6 +8,7 @@ return [
             "render" => "enb::types.numbers",
         ],
     ],
+    "perCol" => 4, // 3,4
     // Admin
     "customNumbersComponent" => null,
 ];
