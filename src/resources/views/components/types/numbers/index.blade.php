@@ -4,7 +4,7 @@
         $perCol = config("editable-numbers-block.perCol");
         if ($isFullPage) {
             $gridClass = "lg:w-1/3";
-            if ($perCol === 4) { $gridClass .= " xl:w-1/4"; }
+            if ($perCol === 4) { $gridClass .= " 2xl:w-1/4"; }
         } else {
             $gridClass = "";
         }
