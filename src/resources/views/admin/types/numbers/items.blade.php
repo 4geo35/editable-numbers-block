@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="card-body">
-                // Template
+                @include("enb::admin.types.numbers.item")
                 @include("eb::admin.types.includes.help-info")
             </div>
         </div>
