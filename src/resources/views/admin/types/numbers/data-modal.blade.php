@@ -6,10 +6,10 @@
         <form wire:submit.prevent="{{ $itemId ? 'update' : 'store' }}"
               class="space-y-indent-half" id="numbersBlockDataForm-{{ $block->id }}">
             <div>
-                <label for="imageTextTitle-{{ $block->id }}" class="inline-block mb-2">
+                <label for="numbersTitle-{{ $block->id }}" class="inline-block mb-2">
                     Заголовок
                 </label>
-                <input type="text" id="imageTextTitle-{{ $block->id }}"
+                <input type="text" id="numbersTitle-{{ $block->id }}"
                        class="form-control {{ $errors->has("title") ? "border-danger" : "" }}"
                        wire:loading.attr="disabled"
                        wire:model="title">
@@ -17,12 +17,12 @@
             </div>
 
             <div>
-                <label for="imageTextDescription-{{ $block->id }}" class="flex justify-start items-center mb-2">
+                <label for="numbersDescription-{{ $block->id }}" class="flex justify-start items-center mb-2">
                     Описание
-                    @include("tt::admin.description-button", ["id" => "imageTextHidden-{$block->id}"])
+                    @include("tt::admin.description-button", ["id" => "numbersHidden-{$block->id}"])
                 </label>
-                @include("tt::admin.description-info", ["id" => "imageTextHidden-{$block->id}"])
-                <textarea id="imageTextDescription-{{ $block->id }}" class="form-control !min-h-52 {{ $errors->has('description') ? 'border-danger' : '' }}"
+                @include("tt::admin.description-info", ["id" => "numbersHidden-{$block->id}"])
+                <textarea id="numbersDescription-{{ $block->id }}" class="form-control !min-h-52 {{ $errors->has('description') ? 'border-danger' : '' }}"
                           rows="10"
                           wire:model.live="description">
                         {{ $description }}
