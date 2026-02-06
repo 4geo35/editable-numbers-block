@@ -4,13 +4,14 @@ namespace GIS\EditableNumbersBlock\Livewire\Admin\Types;
 use GIS\EditableBlocks\Interfaces\SimpleItemActionsInterface;
 use GIS\EditableBlocks\Traits\CheckBlockAuthTrait;
 use GIS\EditableBlocks\Traits\EditBlockTrait;
+use GIS\EditableBlocks\Traits\PlaceholderBlockTrait;
 use GIS\EditableBlocks\Traits\SimpleItemActionsTrait;
 use Illuminate\View\View;
 use Livewire\Component;
 
 class NumbersWire extends Component implements SimpleItemActionsInterface
 {
-    use EditBlockTrait, SimpleItemActionsTrait, CheckBlockAuthTrait;
+    use EditBlockTrait, SimpleItemActionsTrait, CheckBlockAuthTrait, PlaceholderBlockTrait;
 
     public function rules(): array
     {
